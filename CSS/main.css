@@ -2,17 +2,27 @@ body{
     background-color: #eee;
 }
 
-p{
-    color: green;
-    text-align: justify;
-    text-indent: 20px; /*Indentar la primera linea*/
-    line-height: 1.7; /*generar espacio entre lineas*/
-    /*agregar efecto de sombra o 3D al texto:*/
-    text-shadow: 1px 2px 3px rgb(0, 0, 0, 0.3); /*primer valor texto a la derecha , segundo valor hacia abajo , tercer valor que tan difuminado y el ultimo que color*/
+table{
+    width: 100%;
 }
 
-a{
-    text-decoration: none; /*propiedades: none, underline, overline */
-    text-transform: uppercase; 
-    letter-spacing: 3px; /*generar espaio entre letras*/
+tr:nth-child(even){
+    background-color: lightblue;
+}
+
+td{
+    padding-right: 8px;
+    padding-left: 8px;
+    border: 1px solid;
+}
+
+table th{
+    background-color:rgb(42, 42, 124) ;
+    color:white ;
+    text-align:left ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 1px solid;
 }
