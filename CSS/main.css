@@ -1,11 +1,17 @@
 body{
-    background: gray;
+    background: #bbbbbb;
 }
 
-.formulario label{
-    font-family:'Times New Roman';
-}
-
-.formulario input{
-    align-items: center;
+.caja {
+    margin: 8px;
+    padding: 8px;
+    border-style: outset ;
+    /* estos son  algunas de las propiedades para border */
+    /*outset groove ridge inset none dotted dashed solid   (todos estos permiten darle un estilo de borde a la caja)*/
+    border-width: 8px; /* ancho del borde */
+    border-radius: 8px; /*radio en las esquinas del borde de la caja*/
+    height: 100px; /* alto de la caja */
+    width: 100px; /* ancho de la caja */
+    background-color: rosybrown; /* color de la caja*/
+    color: white ; /* color del texto en la caja */
 }
