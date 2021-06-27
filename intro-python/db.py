@@ -5,7 +5,7 @@ midb = mysql.connector.connect(
     #recibe cuatro argumentos
     host='localhost',
     user='root',
-    password='root', 
+    password='root21', 
     database='pruebauno' #indicar el nombre de la bd
 ) #este metodo devuelve la instancia
 
@@ -55,3 +55,4 @@ print(resultado)
 # cursor.execute(sql, values)
 # midb.commit()
 # print(cursor.rowcount)
+
