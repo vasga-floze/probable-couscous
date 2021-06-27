@@ -14,12 +14,24 @@ midb = mysql.connector.connect(
 cursor = midb.cursor()
 
 #esta consulta indica que se va a mostrar todos los registros en el modelo Usuario
-cursor.execute('select * from usuario')
+#cursor.execute('select * from usuario')
 
-#fetchall() devuelve todas las instancias que encuentra
-resultado = cursor.fetchall()
 
-#fetchone() devuelve la primera que encuentra
+#INSERTAR DATOS
+#cursor.execute('show create table usuario') #consultar script con el que se creo la tabla
+sql = 'INSERT INTO usuario(nombre, apellido, edad) VALUES (%s, %s, %s)' #insertar datos
+values = ('Carmen', 'Morataya', 56)
+cursor.execute(sql, values)
+
+
+midb.commit() #se compromenten los datos para que puedan ser guardados en la base de datos
+
+print(cursor.rowcount)
+
+#fetchall() DEVUELVE TODAS LAS INSTANCIAS QUE ENCUENTRA
+#resultado = cursor.fetchall()
+
+#fetchone() DEVUELVE EL PRIMER REGISTRO QUE ENCUENTRA
 #resultado = cursor.fetchone()
 
-print(resultado)
+#print(resultado)
